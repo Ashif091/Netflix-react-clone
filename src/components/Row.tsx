@@ -47,7 +47,7 @@ const Row = ({title, fetchURL, rowId}: Props) => {
           id={"slider" + rowId}
         >
           {movies.map((item, id) => (
-            item.backdrop_path?<Movie item={item} key={id}></Movie>:""
+             item.backdrop_path?<Movie item={item} key={id}  index={id}></Movie>:""
           ))}
         </div>
         <MdChevronRight
